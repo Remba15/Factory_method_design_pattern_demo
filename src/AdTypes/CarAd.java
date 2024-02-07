@@ -1,10 +1,12 @@
+package AdTypes;
+
 public class CarAd implements Ad{
     public String mCarManufacturer;
-    public String mCarModel;
-    public double mMileage;
-    public double mPrice;
+    private String mCarModel;
+    private double mMileage;
+    private double mPrice;
     @Override
-    public void printAd() {
+    public void postAd() {
         String adString = mCarManufacturer + " " + mCarModel + "\n" +
                 "Mileage: " + mMileage + "\n" +
                 "Price: " + mPrice + "\n";
@@ -17,4 +19,5 @@ public class CarAd implements Ad{
         this.mMileage = 0.0;
         this.mPrice = 0.0;
     }
+
 }
